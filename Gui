@@ -22,14 +22,14 @@ local W1 = OrionLib:MakeWindow({Name = "Furry Infection Fucker", HidePremium = f
 OrionLib:MakeNotification({
     Name = "Furry Infection Fucker",
     Content = "UseLess Person#7247",
-    Image = "rbxassetid://4483345998",
+    Image = "rbxassetid://6890648157", --- rbxassetid://4483345998
     Time = 5
 })
 
 OrionLib:MakeNotification({
     Name = "Furry Infection Fucker",
     Content = "If you wanna re-execute the script make sure all features are disabled (atleast loop kill all and antifaginfect)",
-    Image = "rbxassetid://4483345998",
+    Image = "rbxassetid://6890648157", --- rbxassetid://4483345998
     Time = 5
 })
 
@@ -151,7 +151,7 @@ Toggles:AddButton({
             if v.Character:FindFirstChild("Humanoid").Health <= 0 or v.Character:FindFirstChild("ForceField") then
             
             else    
-            if v.Character:FindFirstChild("LLeft Leg") or v.Character:FindFirstChild("tail") then
+            if v.Character:FindFirstChild("LLeft Leg") or v.Team == "Transfured" then
                 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(v.Character.HumanoidRootPart.Position)
                 for asscheek = 1,5 do
                     if game.Players.LocalPlayer.Character:FindFirstChild("Bat") or game.Players.LocalPlayer.Backpack:FindFirstChild("Bat") or game.Players.LocalPlayer.Backpack:FindFirstChild("Metal  Bat") or game.Players.LocalPlayer.Character:FindFirstChild("Metal  Bat") then
@@ -221,7 +221,7 @@ while _G.killall do task.wait(1)
             if v.Character:FindFirstChild("Humanoid").Health <= 0 or v.Character:FindFirstChild("ForceField") then
             
             else    
-            if v.Character:FindFirstChild("LLeft Leg") or v.Character:FindFirstChild("tail") then
+            if v.Character:FindFirstChild("LLeft Leg") or v.Team == "Transfured" then
                 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(v.Character.HumanoidRootPart.Position)
                 for asscheek = 1,15 do
                     if game.Players.LocalPlayer.Character:FindFirstChild("Bat") or game.Players.LocalPlayer.Backpack:FindFirstChild("Bat") or game.Players.LocalPlayer.Backpack:FindFirstChild("Metal  Bat") or game.Players.LocalPlayer.Character:FindFirstChild("Metal  Bat") then
