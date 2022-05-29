@@ -1,3 +1,4 @@
+pcall(function()
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
 if workspace:FindFirstChild("FagFolder") then
@@ -151,9 +152,9 @@ Toggles:AddButton({
             if v.Character:FindFirstChild("Humanoid").Health <= 0 or v.Character:FindFirstChild("ForceField") then
             
             else    
-            if v.Character:FindFirstChild("LLeft Leg") or v.Team == "Transfured" then
+            if v.Character:FindFirstChild("LLeft Leg") or v.Character:FindFirstChild("Left Leg"):FindFirstChild("LLeft Leg") then
                 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(v.Character.HumanoidRootPart.Position)
-                for asscheek = 1,15 do
+                for asscheek = 1,5 do
                     if game.Players.LocalPlayer.Character:FindFirstChild("Bat") or game.Players.LocalPlayer.Backpack:FindFirstChild("Bat") or game.Players.LocalPlayer.Backpack:FindFirstChild("Metal  Bat") or game.Players.LocalPlayer.Character:FindFirstChild("Metal  Bat") then
                     task.wait()
                     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(v.Character.HumanoidRootPart.Position+Vector3.new(0,10,0))
@@ -221,7 +222,7 @@ while _G.killall do task.wait(1)
             if v.Character:FindFirstChild("Humanoid").Health <= 0 or v.Character:FindFirstChild("ForceField") then
             
             else    
-            if v.Character:FindFirstChild("LLeft Leg") or v.Team == "Transfured" then
+            if v.Character:FindFirstChild("LLeft Leg") or v.Character:FindFirstChild("Left Leg"):FindFirstChild("LLeft Leg") then
                 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(v.Character.HumanoidRootPart.Position)
                 for asscheek = 1,15 do
                     if game.Players.LocalPlayer.Character:FindFirstChild("Bat") or game.Players.LocalPlayer.Backpack:FindFirstChild("Bat") or game.Players.LocalPlayer.Backpack:FindFirstChild("Metal  Bat") or game.Players.LocalPlayer.Character:FindFirstChild("Metal  Bat") then
@@ -357,3 +358,4 @@ Toggles:AddToggle({
 	end)
 end
 })
+end)
