@@ -156,7 +156,7 @@ Toggles:AddButton({
                 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(v.Character.HumanoidRootPart.Position)
                 oldposition = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
                 for asscheek = 1,15 do
-                    if game.Players.LocalPlayer.Character:FindFirstChild("Bat") or game.Players.LocalPlayer.Backpack:FindFirstChild("Bat") or game.Players.LocalPlayer.Backpack:FindFirstChild("Metal  Bat") or game.Players.LocalPlayer.Character:FindFirstChild("Metal  Bat") then
+                    if game.Players.LocalPlayer.Character:FindFirstChild("Bat") or game.Players.LocalPlayer.Character:FindFirstChild("Metal  Bat") then
                     task.wait()
                     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(v.Character.HumanoidRootPart.Position+Vector3.new(0,10,0))
                     local ohInstance1 = v.Character.HumanoidRootPart
@@ -164,7 +164,11 @@ Toggles:AddButton({
                     local ohVector33 = Vector3.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position)
 
                     game.Players.LocalPlayer.Character:FindFirstChildWhichIsA("Tool").Remote.Hit:FireServer(ohInstance1, ohInstance2, ohVector33)
-                    else
+                    elseif game.Players.LocalPlayer.Backpack:FindFirstChild("Bat") then
+                        game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack:FindFirstChild("Bat"))
+                    elseif game.Players.LocalPlayer.Backpack:FindFirstChild("Metal  Bat") then
+                        game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack:FindFirstChild("Metal  Bat"))
+                    elseif not game.Players.LocalPlayer.Backpack:FindFirstChild("Bat") or game.Players.LocalPlayer.Backpack:FindFirstChild("Metal  Bat") then
                         local oldpos = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position
                         game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game:GetService("Workspace").Bat.Position+Vector3.new(0,2,0))
                         repeat task.wait()
@@ -178,11 +182,11 @@ Toggles:AddButton({
                             game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack:FindFirstChild("Metal  Bat"))
                         end    
                     end
-                end
+            end
                 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(oldposition)
             end
         end
-    end
+      	end
 else
     local oldpos = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position
     game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game:GetService("Workspace").Bat.Position+Vector3.new(0,2,0))
@@ -228,15 +232,19 @@ while _G.killall do task.wait(1)
                 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(v.Character.HumanoidRootPart.Position)
                 oldposition = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
                 for asscheek = 1,15 do
-                    if game.Players.LocalPlayer.Character:FindFirstChild("Bat") or game.Players.LocalPlayer.Backpack:FindFirstChild("Bat") or game.Players.LocalPlayer.Backpack:FindFirstChild("Metal  Bat") or game.Players.LocalPlayer.Character:FindFirstChild("Metal  Bat") then
+                    if game.Players.LocalPlayer.Character:FindFirstChild("Bat") or game.Players.LocalPlayer.Character:FindFirstChild("Metal  Bat") then
                     task.wait()
-                   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(v.Character.HumanoidRootPart.Position+Vector3.new(0,5,0))
+                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(v.Character.HumanoidRootPart.Position+Vector3.new(0,10,0))
                     local ohInstance1 = v.Character.HumanoidRootPart
                     local ohInstance2 = v.Character.Humanoid
                     local ohVector33 = Vector3.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position)
 
                     game.Players.LocalPlayer.Character:FindFirstChildWhichIsA("Tool").Remote.Hit:FireServer(ohInstance1, ohInstance2, ohVector33)
-                    else
+                    elseif game.Players.LocalPlayer.Backpack:FindFirstChild("Bat") then
+                        game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack:FindFirstChild("Bat"))
+                    elseif game.Players.LocalPlayer.Backpack:FindFirstChild("Metal  Bat") then
+                        game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack:FindFirstChild("Metal  Bat"))
+                    elseif not game.Players.LocalPlayer.Backpack:FindFirstChild("Bat") or game.Players.LocalPlayer.Backpack:FindFirstChild("Metal  Bat") then
                         local oldpos = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position
                         game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game:GetService("Workspace").Bat.Position+Vector3.new(0,2,0))
                         repeat task.wait()
@@ -250,11 +258,11 @@ while _G.killall do task.wait(1)
                             game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack:FindFirstChild("Metal  Bat"))
                         end    
                     end
-                end
+            end
                 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(oldposition)
             end
         end
-    end
+      	end
 else
     local oldpos = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position
     game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game:GetService("Workspace").Bat.Position+Vector3.new(0,2,0))
