@@ -153,7 +153,7 @@ Toggles:AddButton({
             else    
             if v.Character:FindFirstChild("LLeft Leg") or v.Team == "Transfured" then
                 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(v.Character.HumanoidRootPart.Position)
-                for asscheek = 1,5 do
+                for asscheek = 1,15 do
                     if game.Players.LocalPlayer.Character:FindFirstChild("Bat") or game.Players.LocalPlayer.Backpack:FindFirstChild("Bat") or game.Players.LocalPlayer.Backpack:FindFirstChild("Metal  Bat") or game.Players.LocalPlayer.Character:FindFirstChild("Metal  Bat") then
                     task.wait()
                     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(v.Character.HumanoidRootPart.Position+Vector3.new(0,10,0))
