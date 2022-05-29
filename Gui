@@ -34,6 +34,8 @@ function notify(name,text)
     Time = 5
 })
 
+notify("Furry Infection Fucker","If you wanna re-execute the script make sure all features are disabled (atleast loop kill all and antifaginfect)")
+
 end
 
 local Toggles = W1:MakeTab({
