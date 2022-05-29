@@ -30,7 +30,7 @@ OrionLib:MakeNotification({
     Name = "Furry Infection Fucker",
     Content = "If you wanna re-execute the script make sure all features are disabled (atleast loop kill all and antifaginfect)",
     Image = "rbxassetid://6890648157", --- rbxassetid://4483345998
-    Time = 5
+    Time = 10
 })
 
 function notify(name,text)
